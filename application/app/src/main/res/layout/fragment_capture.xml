@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/jua"
+            android:text="1. 학년: "
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/jua"
+                android:text="1학년" />
+
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/jua"
+                android:text="2학년" />
+
+            <RadioButton
+                android:id="@+id/third"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/jua"
+                android:text="3학년" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/jua"
+            android:text="2. 년도/월: "
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/jua"
+            android:textSize="20sp"
+            android:entries="@array/year"/>
+
+        <Spinner
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/jua"
+            android:textSize="20sp"
+            android:entries="@array/month"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/jua"
+            android:text="3. 과목: "
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/jua"
+            android:textSize="20sp"
+            android:entries="@array/subject"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4D368A63"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chaejum"
+            android:fontFamily="@font/jua"
+            android:gravity="center"
+            android:text="문제 선택"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/correctBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chaejum"
+            android:fontFamily="@font/jua"
+            android:gravity="center"
+            android:text="채점 시작"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

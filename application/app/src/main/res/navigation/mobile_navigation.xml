@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_note">
+
+    <fragment
+        android:id="@+id/navigation_capture"
+        android:name="com.app.madcampweek3.ui.capture.CaptureFragment"
+        android:label="@string/title_capture"
+        tools:layout="@layout/fragment_capture" />
+
+    <fragment
+        android:id="@+id/navigation_note"
+        android:name="com.app.madcampweek3.ui.note.NoteFragment"
+        android:label="@string/title_note"
+        tools:layout="@layout/fragment_note" />
+
+    <fragment
+        android:id="@+id/navigation_mypage"
+        android:name="com.app.madcampweek3.ui.mypage.MypageFragment"
+        android:label="@string/title_mypage"
+        tools:layout="@layout/fragment_mypage" />
+</navigation>

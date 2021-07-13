@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:background="#e6dcd3"
+    android:orientation="vertical">
+
+    <!-- 타이틀바 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/nanum"
+            android:gravity="center"
+            android:text="채점 결과"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.87"
+            android:fontFamily="@font/nanum"
+            android:text="결과"
+            android:textColor="#40403E"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- //end 타이틀바 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/okayBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="YES"
+            android:textColor="#665442"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="NO"
+            android:textColor="#665442"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

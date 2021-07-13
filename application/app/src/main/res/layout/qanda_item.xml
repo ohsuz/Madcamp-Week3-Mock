@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/notrounded"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/qanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum"
+            android:text="문제와 답"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/title" />
+
+        <ImageView
+            android:id="@+id/imgExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/title" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

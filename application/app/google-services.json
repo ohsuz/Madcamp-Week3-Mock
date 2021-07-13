@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "130548328472",
+    "firebase_url": "https://mock-a23b6.firebaseio.com",
+    "project_id": "mock-a23b6",
+    "storage_bucket": "mock-a23b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130548328472:android:d0649ea4d62fb10ae8fb6d",
+        "android_client_info": {
+          "package_name": "com.app.madcampweek3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130548328472-s6v6td3fp7fvioegelvc1nmmjnsjtabe.apps.googleusercontent.com",
+          "client_type": 3,
+          "android_info": {
+            "package_name": "com.app.madcampweek3",
+            "certificate_hash": "d913dbf2ad5445c1a40aeca35d0d08f2900a0cc0"
+          }
+        },
+        {
+          "client_id": "130548328472-fevjm9m54pmvparfe5ulmn4p31ut38sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdcmdede7uGeF2H5c7XxXZsJuiV8Plw78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130548328472-fevjm9m54pmvparfe5ulmn4p31ut38sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
